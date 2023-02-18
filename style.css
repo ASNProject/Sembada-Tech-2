@@ -1,0 +1,203 @@
+/**
+ * Copyright 2023 ariefsetyonugroho
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*  poppins google fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* css variables */
+:root {
+  --body-bg-color: #05043e;
+  --card-primary-color: #151450;
+  --card-secondary-color: #211c5c;
+  --btn-bg-color: #7259db;
+  --secondary-color: #7259db;
+  --icon-bg-01: #f7a025;
+  --icon-bg-02: #2d70ab;
+  --icon-bg-03: #fe1161;
+  --icon-bg-04: #0389fe;
+
+  --text-small: 1rem;
+  --text-heading: 2rem;
+}
+
+/*reset default browser design */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base style */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--body-bg-color);
+}
+
+section {
+  padding: 70px 0px;
+}
+
+/*header settup*/
+.header {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.logo {
+  color: #fff;
+}
+
+.nav_list .nav_item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.search_box span i {
+  color: #fff;
+}
+
+.active_nav {
+  color: var(--secondary-color) !important;
+}
+/* header style end */
+/* hero section style start */
+.hero_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero_content,
+.hero_img {
+  width: 50%;
+}
+
+.hero_content h1 {
+  color: #fff;
+  font-size: 5rem;
+  line-height: 55px;
+}
+.hero_content h2 {
+  color: #fff;
+  font-size: var(--text-heading);
+  margin-bottom: 30px;
+}
+.hero_content p {
+  color: #fff;
+  opacity: 75%;
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+.btn {
+  border: none;
+  padding: 10px 30px;
+  background: var(--btn-bg-color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.hero_img {
+  text-align: right;
+}
+/* hero section style end */
+
+/* choose us section style start */
+
+.choose_us-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.choose_us-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.choose_us-top h2 {
+  color: #fff;
+  font-size: var(--text-heading);
+  margin-bottom: 15px;
+}
+
+.choose_us-top p {
+  color: #fff;
+  opacity: 75%;
+}
+.choose_us-box {
+  width: 250px;
+  padding: 25px;
+  background: var(--card-primary-color);
+  border-radius: 5px;
+}
+.choose_img {
+  background: var(--icon-bg-01);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.choose_img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.choose_us-content h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+.choose_us-content p {
+  color: #fff;
+  opacity: 75%;
+  font-size: 0.9rem;
+}
+
+.choose_img-box-02 {
+  background: var(--icon-bg-02);
+}
+.choose_img-box-03 {
+  background: var(--icon-bg-03);
+}
+.choose_img-box-04 {
+  background: var(--icon-bg-04);
+}
+/* choose us section style end */
