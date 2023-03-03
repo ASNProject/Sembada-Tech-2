@@ -183,6 +183,18 @@
   .search_engine-wrapper {
     flex-direction: column;
   }
+  .search_engine-wrapper2 {
+    flex-direction: column;
+  }
+  .search_engine-wrapper3 {
+    flex-direction: column;
+  }
+  .search_engine-wrapper4 {
+    flex-direction: column;
+  }
+  .search_engine-wrapper5 {
+    flex-direction: column;
+  }
   .search_engine-content,
   .search_img {
     width: 100%;

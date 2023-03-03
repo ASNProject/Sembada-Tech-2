@@ -30,32 +30,36 @@
     <!-- custom css file -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" />
   </head>
 
   <body>
     <!-- ========== header start ========== -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="container">
         <div class="header_wrapper">
-          <div class="logo">
-            <h2 class="text_logo">Sembada Tech</h2>
-            <h5>Innovation & Creativity</h5>
+          <div class="logo_wrapper">
+            <img src="./assets/logo.png" alt="" class="logo_sembada" />
+            <div class="logo">
+              <h2 class="text_logo">Sembada Tech</h2>
+              <h5>Innovation & Creativity</h5>
+            </div>
           </div>
 
           <div class="navigation">
             <div class="menu">
               <ul class="nav_list">
                 <li class="nav_item">
-                  <a href="#" class="active_nav">Home</a>
+                  <a href="#home">Home</a>
                 </li>
-                <li class="nav_item"><a href="#">Produk</a></li>
-                <li class="nav_item"><a href="#">About Us</a></li>
-                <li class="nav_item"><a href="#">Contact</a></li>
+                <li class="nav_item"><a href="#product">Produk</a></li>
+                <li class="nav_item"><a href="#about_us">About Us</a></li>
+                <li class="nav_item"><a href="#kontak">Contact</a></li>
               </ul>
 
-              <div class="search_box">
+              <!-- <div class="search_box">
                 <span><i class="ri-search-line"></i></span>
-              </div>
+              </div> -->
             </div>
           </div>
           <span class="mobile_menu"><i class="ri-menu-line"></i></span>
@@ -126,11 +130,11 @@
               <img src="assets/idea.png" alt="" />
             </div>
             <div class="choose_us-content">
-              <h4>Business and Product Concept too</h4>
+              <h4>Design and Product Concept too</h4>
               <p>
-                We are experienced in designing and developing technology in the
-                industrial and digital fields in accordance with the ideas and
-                expectations of users.
+                We can help design and provide technology concept
+                recommendations according to your needs, with the assistance of
+                experienced consultants.
               </p>
             </div>
           </div>
@@ -140,11 +144,11 @@
               <img src="assets/handshake.png" alt="" />
             </div>
             <div class="choose_us-content">
-              <h4>International Good Relationship</h4>
+              <h4>Good Partnership Relationship</h4>
               <p>
-                We are experienced in designing and developing technology in the
-                industrial and digital fields in accordance with the ideas and
-                expectations of users.
+                We strive to maintain professionalism, trust, consistency, and
+                experience with all our partners by delivering the best results
+                and expectations.
               </p>
             </div>
           </div>
@@ -154,11 +158,11 @@
               <img src="assets/design-thinking.png" alt="" />
             </div>
             <div class="choose_us-content">
-              <h4>Pixel and Perfect Design</h4>
+              <h4>Perfect Technology and Quality</h4>
               <p>
-                We are experienced in designing and developing technology in the
-                industrial and digital fields in accordance with the ideas and
-                expectations of users.
+                We build all projects by following the latest technology based
+                on the best research and experience and maintaining the quality
+                of the product.
               </p>
             </div>
           </div>
@@ -167,36 +171,36 @@
     </section>
     <!-- ========== choose us section end ========== -->
     <!-- ========== offer section start ========== -->
-    <section>
+    <section id="product">
       <div class="container">
         <div class="choose_us-top">
           <h2>What We Offer</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
-            Ab fugiat Tuga tenetur adipisici nobis aperiam
+            Our company provides the latest technology solutions to help <br />
+            increase your productivity and business.
           </p>
         </div>
 
         <div class="offer_wrapper">
-          <div class="offer_box offer_box-01">
-            <img src="assets/seo.png" alt="" />
-            <h4>Seo Marketing</h4>
+          <div class="offer_box">
+            <img src="assets/3d-printer-2.png" alt="" />
+            <h4 id="btn_3d">Design & Print 3D</h4>
           </div>
           <div class="offer_box">
-            <img src="assets/letter.png" alt="" />
-            <h4>Email Marketing</h4>
+            <img src="assets/cpu.png" alt="" />
+            <h4 id="btn_pcb">Design & Print PCB</h4>
           </div>
           <div class="offer_box">
-            <img src="assets/growth.png" alt="" />
-            <h4>Growth Hacking</h4>
+            <img src="assets/industrial-robot.png" alt="" />
+            <h4 id="btn_product">Product/Industrial</h4>
           </div>
           <div class="offer_box">
-            <img src="assets/ppc.png" alt="" />
-            <h4>Google PPC</h4>
+            <img src="assets/car.png" alt="" />
+            <h4 id="btn_app">Software</h4>
           </div>
           <div class="offer_box">
-            <img src="assets/automation.png" alt="" />
-            <h4>Automation Setup</h4>
+            <img src="assets/technology.png" alt="" />
+            <h4 id="btn_rnd">Research & Dev</h4>
           </div>
         </div>
       </div>
@@ -205,25 +209,107 @@
     <!-- search engine section start -->
     <section>
       <div class="container">
-        <div class="search_engine-wrapper">
-          <div class="search_img">
-            <img src="assets/search-engine.png" alt="" />
+        <div class="blocks">
+          <!-- 3D Print -->
+          <div id="print" class="search_engine-wrapper">
+            <div class="search_img">
+              <img src="assets/3d1.jpg" alt="" />
+            </div>
+            <div class="search_engine-content">
+              <h2>Design & 3D Print</h2>
+              <p class="search_engine-text02">
+                We are a 3D printing service that is ready to help you bring
+                your creative ideas to life as real physical objects. With
+                advanced technology and high-quality materials, we are able to
+                print three-dimensional objects with precision and accuracy. We
+                provide custom design and prototyping services, and can work on
+                projects ranging from small to large scale. Entrust your 3D
+                printing needs to us and experience satisfying quality!
+              </p>
+              <button class="btn">Learn More</button>
+            </div>
           </div>
-          <div class="search_engine-content">
-            <h2>Search Engine Optimization</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisixing elit. Non
-              laudatium officiis itaque magnam modi ipsum laboriosam quia
-              Lemporibus minima digissimos. Queral ipsum odio corporis dolore
-              expedita esse est officia dolores.
-            </p>
-
-            <p class="search_engine-text02">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. TneLur
-              solula vilae neque sed optio explicabo nulla omnis el nobis
-              voluptates/
-            </p>
-            <button class="btn">Learn More</button>
+          <!-- PCB -->
+          <div id="pcb" class="search_engine-wrapper2">
+            <div class="search_img">
+              <img src="assets/pcb1.jpg" alt="" />
+            </div>
+            <div class="search_engine-content">
+              <h2>Design & Print PCB</h2>
+              <p class="search_engine-text02">
+                We provide high-quality PCB printing services with precise and
+                accurate results. Our expert team uses advanced technology and
+                the best materials to ensure that the PCBs we print can work
+                well and last long. With years of experience in this industry,
+                we are ready to help you meet your PCB printing needs for your
+                project. Contact us now to get the best offer!
+              </p>
+              <button class="btn">Learn More</button>
+            </div>
+          </div>
+          <!-- Product & Industrial Equipment -->
+          <div id="product_industrial" class="search_engine-wrapper3">
+            <div class="search_img">
+              <img src="assets/product1.jpg" alt="" />
+            </div>
+            <div class="search_engine-content">
+              <h2>Product & Industrial Equipment</h2>
+              <p class="search_engine-text02">
+                We are a reliable and experienced provider of industrial, IoT,
+                and electronic device manufacturing services. Our team consists
+                of skilled technology experts who specialize in designing,
+                developing, and producing customized devices for various
+                industrial and IoT needs. We use the latest technology and
+                high-quality materials to ensure that the products we make have
+                optimal performance and durability. Contact us now to consult on
+                your specific device needs and get the best solution for your
+                project.
+              </p>
+              <button class="btn">Learn More</button>
+            </div>
+          </div>
+          <!-- Application & Software -->
+          <div id="application" class="search_engine-wrapper4">
+            <div class="search_img">
+              <img src="assets/search-engine.png" alt="" />
+            </div>
+            <div class="search_engine-content">
+              <h2>Application & Software</h2>
+              <p class="search_engine-text02">
+                We are a reliable and experienced provider of application
+                development services. We have a skilled and creative team of
+                developers who specialize in designing and developing custom
+                applications for various platforms, including Android and iOS.
+                We understand your need for applications that are user-friendly,
+                functional, and appealing to users. Therefore, we use advanced
+                development methodologies and the latest technology to produce
+                high-quality applications that meet your business needs. Contact
+                us now to start your project and deliver an outstanding
+                application to your users!
+              </p>
+              <button class="btn">Learn More</button>
+            </div>
+          </div>
+          <!-- Research and Development -->
+          <div id="rnd" class="search_engine-wrapper5">
+            <div class="search_img">
+              <img src="assets/search-engine.png" alt="" />
+            </div>
+            <div class="search_engine-content">
+              <h2>Research and Development</h2>
+              <p class="search_engine-text02">
+                We are an innovative and trustworthy provider of research and
+                technology development services. Our expert team has experience
+                in designing, developing, and introducing new technology for
+                various industries. We combine technical knowledge and
+                creativity to produce unique and effective solutions for each of
+                our clients. We always use a structured approach and advanced
+                methodologies in every project we undertake, resulting in
+                exceptional outcomes. Contact us now to develop the latest
+                technology solutions for your business needs.
+              </p>
+              <button class="btn">Learn More</button>
+            </div>
           </div>
         </div>
       </div>
@@ -234,7 +320,7 @@
       <div class="container">
         <div class="counter_wrapper">
           <div class="counter_item">
-            <span class="counter_number">130+</span>
+            <span class="counter_number">100+</span>
             <h5 class="counter_text">Happy Clients</h5>
           </div>
           <div class="counter_item">
@@ -242,11 +328,11 @@
             <h5 class="counter_text">Projects Completed</h5>
           </div>
           <div class="counter_item">
-            <span class="counter_number">20</span>
-            <h5 class="counter_text">Win Awards</h5>
+            <span class="counter_number">10+</span>
+            <h5 class="counter_text">Partners</h5>
           </div>
           <div class="counter_item">
-            <span class="counter_number">25</span>
+            <span class="counter_number">10+</span>
             <h5 class="counter_text">Team member</h5>
           </div>
         </div>
@@ -254,7 +340,7 @@
     </section>
     <!-- counter section end -->
     <!-- about us section start -->
-    <section>
+    <section id="about_us">
       <div class="container">
         <div class="search_engine-wrapper about_us">
           <div class="search_engine-content">
@@ -299,18 +385,13 @@
     <!-- ========== main end ========== -->
 
     <!-- ========== footer start ========== -->
-    <footer class="footer">
+    <footer class="footer" id="kontak">
       <div class="container">
         <div class="footer_wrapper">
           <div class="footer_top">
             <div class="footer_item-01">
-              <h2>LOGO</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati, eos tenetur atque a labore iusto magni iure velit
-                nostrum harum quidem repellendus impedit beatae voluptatem omnis
-                esse voluptate dolorem pariatur!
-              </p>
+              <img src="assets/logo.png" alt="" />
+              <h4>CV. Sembada Kreatif Inovasi</h4>
               <div class="footer_icon">
                 <span><i class="ri-facebook-line"></i></span>
                 <span><i class="ri-linkedin-line"></i></span>
@@ -321,11 +402,17 @@
 
             <div class="footer_item-02">
               <h4>Contact</h4>
-              <p>Jalan. Bantul 101, Bantul, Yogyakarta</p>
-              <p class="contact_number">
-                <span><i class="ri-phone-line"></i></span>081234567890
+              <p>
+                Balong, Timbulharjo, Kec. Sewon, Kabupaten Bantul, Daerah
+                Istimewa Yogyakarta, 55185
               </p>
               <p class="contact_number">
+                <span><i class="ri-phone-line"></i></span>087876150401
+              </p>
+              <p class="contact_mail">
+                <span><i class="ri-mail-line"></i></span>office@sembadatech.com
+              </p>
+              <p class="contact_location">
                 <span><i class="ri-map-pin-2-line"></i></span>Bantul, Yogyakarta
               </p>
             </div>
@@ -333,7 +420,7 @@
             <div class="footer_item-03">
               <h4>Viewer guides</h4>
               <ul class="quick_list">
-                <li><a href="#">Feature</a></li>
+                <li><a href="#">Features</a></li>
                 <li><a href="#">Blog Post</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Help & Support</a></li>
