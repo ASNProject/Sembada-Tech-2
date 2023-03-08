@@ -5,7 +5,7 @@ See the project: [Sembada Tech](http://sembadatech.com/)
 ## Clone & Run
 Clone this project
 ```
-git clone https://github.com/ASNProject/Sembada-Tech.git
+git clone https://github.com/ASNProject/Sembada-Tech-2.git
 ```
 Run program
 ```
