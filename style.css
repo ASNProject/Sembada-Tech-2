@@ -369,9 +369,22 @@ section {
   font-size: var(--text-small);
   line-height: 30px;
 }
+.search_engine-content ul li {
+  color: #fff;
+  opacity: 75%;
+  font-size: var(--text-small);
+  line-height: 30px;
+}
+.search_engine-content ul {
+  margin-left: 30px;
+}
 .search_engine-text02 {
   margin-top: 20px;
   margin-bottom: 30px;
+}
+.img_partners {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* search engine section end */
@@ -418,7 +431,7 @@ section {
 .customer_review-top h2 {
   color: #fff;
   font-size: var(--text-heading);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .customer_review-top p {
   color: #fff;
